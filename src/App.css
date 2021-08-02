@@ -2,4 +2,108 @@
 [data-rbd-droppable-context-id="0"]{
 	white-space: normal !important;
 }
-
+.navbar-nav.ml-auto.mr-auto {
+    margin-left: 0px!important;
+}
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-nav>.nav-item {
+    position: relative;
+}
+.navbar-nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.navbar .link-wrapper>a.nav-link.text-uppercase {
+    text-transform: uppercase!important;
+}
+.navbar .link-wrapper>a.nav-link {
+    font-size: 14px!important;
+    line-height: 32px!important;
+    padding: 0 8px!important;
+}
+.navbar .nav-link {
+    color: #fff;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+ul.dropdown-menu {
+    background-color: #f8f9fa!important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    float: none;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+ul.navbar-nav a.dropdown-item {
+    text-transform: none !important;
+   color: rgba(0,0,0,.5);
+    padding: 11px 17px 10px 17px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    font-weight: 700;
+    
+}
+ul.dropdown-menu a.dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}

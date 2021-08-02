@@ -57,8 +57,7 @@ class GuidesList extends Component {
           <thead key="thead">
           <tr>
             <th>#</th>
-            <th>Plate Number</th>
-            <th>Guide Type</th>
+            <th>Guide Name</th>
             <th>Description</th>   
             <th>Actions</th>   
           </tr>
@@ -69,8 +68,7 @@ class GuidesList extends Component {
 
               <tr key={c.pk}>
                 <td>{c.pk} </td>
-                <td>{c.plate_number}</td>
-                <td>{c.guide_type}</td>
+                <td>{c.first_name} {c.last_name}</td>
                 <td>{c.description}</td>
                 <td>
                 <button  onClick={(e)=> this.handleDelete(e,c.pk) }> Delete</button>

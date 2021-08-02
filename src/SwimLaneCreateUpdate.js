@@ -17,8 +17,7 @@ class SwimLaneCreateUpdate extends Component {
         if(params && params.pk)
         {
           apiService.getSwimLane(params.pk).then((c)=>{
-            this.refs.plateNumber.value = c.plate_number;
-            this.refs.swimlaneType.value = c.swimlane_type;
+            this.refs.name.value = c.name;
             this.refs.description.value = c.description;
           })
         }
@@ -27,8 +26,7 @@ class SwimLaneCreateUpdate extends Component {
       handleCreate(){
         apiService.createSwimLane(
           {
-            "plate_number": this.refs.plateNumber.value,
-            "swimlane_type": this.refs.swimlaneType.value,
+            "name": this.refs.name.value,
             "description": this.refs.description.value
         }          
         ).then((result)=>{
@@ -41,8 +39,7 @@ class SwimLaneCreateUpdate extends Component {
         apiService.updateSwimLane(
           {
             "pk": pk,
-            "plate_number": this.refs.plateNumber.value,
-            "swimlane_type": this.refs.swimlaneType.value,
+            "name": this.refs.name.value,
             "description": this.refs.description.value
         }          
         ).then((result)=>{
@@ -71,12 +68,8 @@ class SwimLaneCreateUpdate extends Component {
           <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>
-              Plate Number:</label>
-              <input className="form-control" type="text" ref='plateNumber' />
-            
-            <label>
-              SwimLane Type:</label>
-              <input className="form-control" type="text" ref='swimlaneType'/>
+              SwimLane:</label>
+              <input className="form-control" type="text" ref='name' />
             
             <label>
               Description:</label>

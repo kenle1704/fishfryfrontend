@@ -57,8 +57,7 @@ class SwimLanesList extends Component {
           <thead key="thead">
           <tr>
             <th>#</th>
-            <th>Plate Number</th>
-            <th>SwimLane Type</th>
+            <th>Lane</th>
             <th>Description</th>   
             <th>Actions</th>   
           </tr>
@@ -69,8 +68,7 @@ class SwimLanesList extends Component {
 
               <tr key={c.pk}>
                 <td>{c.pk} </td>
-                <td>{c.plate_number}</td>
-                <td>{c.swimlane_type}</td>
+                <td>{c.name}</td>
                 <td>{c.description}</td>
                 <td>
                 <button  onClick={(e)=> this.handleDelete(e,c.pk) }> Delete</button>

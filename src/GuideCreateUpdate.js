@@ -17,8 +17,8 @@ class GuideCreateUpdate extends Component {
         if(params && params.pk)
         {
           apiService.getGuide(params.pk).then((c)=>{
-            this.refs.plateNumber.value = c.plate_number;
-            this.refs.guideType.value = c.guide_type;
+            this.refs.first_name.value = c.first_name;
+            this.refs.last_name.value = c.last_name;
             this.refs.description.value = c.description;
           })
         }
@@ -27,8 +27,8 @@ class GuideCreateUpdate extends Component {
       handleCreate(){
         apiService.createGuide(
           {
-            "plate_number": this.refs.plateNumber.value,
-            "guide_type": this.refs.guideType.value,
+            "first_name": this.refs.first_name.value,
+            "last_name": this.refs.last_name.value,
             "description": this.refs.description.value
         }          
         ).then((result)=>{
@@ -41,8 +41,8 @@ class GuideCreateUpdate extends Component {
         apiService.updateGuide(
           {
             "pk": pk,
-            "plate_number": this.refs.plateNumber.value,
-            "guide_type": this.refs.guideType.value,
+            "first_name": this.refs.first_name.value,
+            "last_name": this.refs.last_name.value,
             "description": this.refs.description.value
         }          
         ).then((result)=>{
@@ -71,12 +71,12 @@ class GuideCreateUpdate extends Component {
           <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>
-              Plate Number:</label>
-              <input className="form-control" type="text" ref='plateNumber' />
+              Guide Firstname:</label>
+              <input className="form-control" type="text" ref='first_name' />
             
             <label>
-              Guide Type:</label>
-              <input className="form-control" type="text" ref='guideType'/>
+              Guide Lastname:</label>
+              <input className="form-control" type="text" ref='last_name'/>
             
             <label>
               Description:</label>
