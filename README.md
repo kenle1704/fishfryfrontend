@@ -32,7 +32,8 @@ TO DEPLOY
 6.1 change dns zone to point your domain name to the env ip 
 6.2 set up CloudFront  for your website , this will cache the content and will push up a lot , however it will have issue when development, thus we could recommend to have development env 
 6.3 you can also publish your site at cdn server but in this case it will not really usefull since the size of project is quite small 
-Functions 
+
+FUNCTIONS 
 1. BoatService
 This is where you will find your dashboard of boats and order base on SwimLanes 
 1.1 you can move boat from one lane to another lane by dragging it 
@@ -50,6 +51,7 @@ This is where you will find your dashboard of boats and order base on SwimLanes
 4. SwimLanes
 4.1 SwimLanes will show you list of all swimlane that available in the system to service
 4.2 You can DELELTE/UPDATE/ADD a Lane, after that it will reflect in Boat Service Dashboard 
+
 TODO
 1. Permission User 
 It is very import to limit access to each user ( eg: operator, guide ), however i was not able to finish it in this project 
