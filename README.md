@@ -9,7 +9,7 @@ TO DEPLOY
 5.2 create a config file in sites-available eg sitename.com.conf
 5.3 fill in with this content 
 
-<VirtualHost *:80>
+
         ServerName sitename.com
         ServerAnpm run-script buildlias www.sitename.com
         ServerAdmin webmaster@sitename.com
@@ -21,7 +21,7 @@ TO DEPLOY
                 AllowOverride All
                 Require all granted
         </Directory>
-</VirtualHost>
+
 
 
 
