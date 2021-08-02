@@ -8,6 +8,7 @@ TO DEPLOY
 5.1 make sure you have apache installed ( or you can choose other ways to set up your env ) 
 5.2 create a config file in sites-available eg sitename.com.conf
 5.3 fill in with this content 
+
 <VirtualHost *:80>
         ServerName sitename.com
         ServerAnpm run-script buildlias www.sitename.com
@@ -21,6 +22,9 @@ TO DEPLOY
                 Require all granted
         </Directory>
 </VirtualHost>
+
+
+
 5.4 run "a2ensite sitename.com" to enable your site 
 5.5 restart apache 
 5.6 to test your site is ready, you can change your home computer hosts file to point to that env ip and verify that you can view your site 
