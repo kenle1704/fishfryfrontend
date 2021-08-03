@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://fishfry.com';
+const API_URL = 'http://'+window.location.hostname;
 const API_PORT = '8080';
 export default class ApiService{
 	constructor(){}
