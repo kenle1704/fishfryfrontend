@@ -8,6 +8,7 @@ TO DEPLOY
 6. make sure you have apache installed ( or you can choose other ways to set up your env ) 
 7. create a config file in sites-available eg sitename.com.conf
 8. fill in with this content 
+9. make sure you allow port 80 to inbound rule to your env 
 
 
         ServerName sitename.com
